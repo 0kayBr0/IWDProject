@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amogh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 150px;
+    color: #000000; 
+    background-image: url(bg3.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url(bg1.jpg);
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url(bg2.png);
+  min-height: 400px;
+}
+
+
+.w3-wide {
+      letter-spacing: 5px;
+    }
+
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+
+    .w3-bar {
+      background-color: #0f0f0f !important;
+      color: #fff
+    }
+
+    .w3-bar-item {
+      padding: 14px 16px !important;
+    }
+
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      color: #fff;
+    }
+
+    .w3-display-middle {
+      white-space: nowrap;
+    }
+
+    .w3-animate-opacity {
+      animation: opacity-animation 1.5s;
+    }
+
+    @keyframes opacity-animation {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .w3-content {
+      background-color: #ffffff;
+      padding: 64px 16px;
+      
+    }
+
+    .w3-section {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .w3-dark-grey {
+      color: #262527 !important;
+      background-color: #eceaf0ce !important;
+    }
+
+    .w3-padding-large {
+      padding: 16px 32px !important;
+    }
+
+    .w3-hover-opacity-off:hover {
+      opacity: 1 !important;
+    }
+
+    .w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars">Amogh</i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span id="amoghText"></span> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love photography</em></p>
+  <p>
+    Photography, for me, is a profound means of capturing the essence of fleeting moments and immortalizing them in a frame. It goes beyond the mere act of taking pictures; it's an art form that allows me to express my creativity and share my unique perspective with the world. The lens becomes my instrument, and each click tells a story, freezing time in a way that words often struggle to achieve. The magic lies in the ability to convey emotions, document journeys, and encapsulate the beauty of the ordinary. Through photography, I find a medium to connect with the world intimately, appreciating the nuances of light, shadow, and composition. It's a lifelong journey of exploration, learning, and discovery, where every click is a step into a world of endless possibilities and a celebration of the artistry inherent in our surroundings. Photography is not just a hobby; it's a profound passion that allows me to savor life's most exquisite moments and share them with others.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="mypic.jpeg" class="w3-round w3-image w3-opacity-none w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my professional portfolio, a showcase of my expertise in web design, photography, graphic design, and project management. This platform encapsulates my commitment to delivering sophisticated and functional solutions across various creative domains. As you navigate through the portfolio, you'll discover a collection of projects that exemplify not only technical proficiency but also a discerning eye for aesthetics. Specializing in crafting visually appealing websites, captivating photography, compelling graphic designs, and effective project management, I bring a meticulous approach to each endeavor.
+      </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-dark-grey">
+    <div class="w3-container w3-padding-small w3-black w3-center" style="width:90%"></div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Designing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-black w3-center" style="width:85%"></div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Graphic Designing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-black w3-center" style="width:75%"></div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-user"></i>Project Manager</p>
+<div class="w3-light-grey">
+  <div class="w3-container w3-padding-small w3-black w3-center" style="width:85%"></div>
+</div>
+
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">45+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">69+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-none">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some photos taken by me.<br> Click on the images to view</em></p><br>
+
+  
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m2">
+      <img src="pic1.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m2">
+      <img src="pic2.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m2">
+      <img src="pic3.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m2">
+      <img src="pic4.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    
+    <div class="w3-col m2">
+      <img src="pic5.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+
+    <div class="w3-col m2">
+      <img src="pic6.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m2">
+      <img src="pic7.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col m2">
+      <img src="pic8.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col m2">
+        <img src="pic9.jpg" style="width:150px; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+      <div class="w3-col m2">
+        <img src="pic10.webp" style="width:100%; height:150px" onclick="onClick(this)" class="w3-hover-opacity">
+      
+</div>
+<!-- Container (Portfolio Section 2) -->
+<div class="w3-content w3-container w3-padding-64" id="Portfolio">
+    <h3 class="w3-center">MY OTHER WORKS</h3>
+    <p class="w3-center"><em>Here are some graphic design projects.<br> Click on the images to view</em></p><br>
+  
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="gpic1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+  
+      <div class="w3-col m4">
+        <img src="gpic2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+  
+      <div class="w3-col m4">
+        <img src="gpic3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    </div>
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m4">
+          <img src="gpic4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    
+        <div class="w3-col m4">
+          <img src="gpic5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    
+        <div class="w3-col m4">
+          <img src="gpic6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+  </div>
+  
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-none">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">GET IN TOUCH?</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="map.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>2369/B, 2nd Main Rd, 3rd Stage, JP Nagar, Bengaluru, India<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 9513579136<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: amoghphotography@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form id="contactForm" action="/action_page.php" target="_blank" onsubmit="submitForm(); return false;">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity-none w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p> &copy; All rights reserved by Amogh <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+ 
+<script>
+    function typeWriter() {
+  var txt = "AMOGH";
+  var speed = 500; 
+  for (var i = 0; i < txt.length; i++) {
+    setTimeout(function (index) {
+      return function () {
+        document.getElementById("amoghText").innerHTML += txt.charAt(index);
+      };
+    }(i), i * speed);
+  }
+}
+
+
+window.onload = function () {
+  typeWriter();
+};
+      
+  function submitForm() {
+    
+    alert("Thank you for your feedback!");
+
+    
+    document.getElementById("contactForm").reset();
+  }
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+
+ function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    } 
+    }
+
+</script>
+
+</body>
+</html>
